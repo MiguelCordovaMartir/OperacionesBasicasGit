@@ -36,6 +36,7 @@ namespace operacionesBasicas
             this.txtNumero2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtResultado
@@ -104,12 +105,24 @@ namespace operacionesBasicas
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(463, 186);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(116, 35);
+            this.btnSalir.TabIndex = 22;
+            this.btnSalir.Text = "SALIR";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(626, 365);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -133,6 +146,7 @@ namespace operacionesBasicas
         private System.Windows.Forms.TextBox txtNumero2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
 

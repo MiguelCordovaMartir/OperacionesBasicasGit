@@ -19,18 +19,26 @@ namespace operacionesBasicas
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
+            //Declaracion de variables
             double num1 = int.Parse(txtNumero1.Text);
             double num2 = int.Parse(txtNumero2.Text);
 
 
 
+            //Proceso
             double suma = num1 + num2;
             double resta = num1 - num2;
 
 
 
+            //Salida de datos 
             txtResultado.Text = $" La suma es: {suma} " +
                $"La resta es: {resta}";
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
